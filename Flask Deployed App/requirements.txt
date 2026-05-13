@@ -5,8 +5,8 @@ Werkzeug==2.3.7
 gunicorn==21.2.0
 
 # ML / Image processing
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
+torch
+torchvision
 numpy==1.26.4
 Pillow==10.1.0
 

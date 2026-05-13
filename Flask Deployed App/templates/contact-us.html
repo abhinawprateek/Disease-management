@@ -1,69 +1,89 @@
 {% extends 'base.html' %}
-{% block pagetitle %}
-Contact Us
-{% endblock pagetitle %}
+{% block pagetitle %}Contact Us{% endblock pagetitle %}
 
 {% block body %}
+<div class="container my-5">
 
-<div class="row mb-5 text-center text-white laptop">
-    <div class="col-lg-10 mx-auto">
-        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>📞Contact-Us📞</b></h1>
-        <p class="lead" style="font-weight: 500;color: black;">For Any Queries & Suggestions Contact Us. We Are Happy To
-            Help.</p>
-    </div>
-</div>
-
-<div class="row p-3">
-    <div class="col">
-        <div class=" p-5 bg-white shadow rounded-lg" style="height: 95%;">
-            <center>
-                <h3>Manthan Bhikadiya</h3>
-                <p class="lead" style="font-weight: 350;">Hi, I am Manthan Bhikadiya. Currently Pursuing Bachelors in
-                    Information
-                    Technology.My Main Focus is on Machine Learning, Deep Learning and Artificial Intelligence.I am Also
-                    Interested in Blockchain and Flutter App Development.</p>
-            </center>
-            <div>
-                <h5>Social Media Handles :</h5><br>
-                <a target="_blank" href='mailto:bhikadiyamanthan@gmail.com'><img
-                        src="https://image.flaticon.com/icons/png/512/281/281769.png" height="40" width="40"></a> :
-                bhikadiyamanthan@gmail.com<br><br>
-                <a target="_blank" href='manthan-bhikadiya.medium.com'><img
-                        src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png" height="44"
-                        width="44"></a> : manthan-bhikadiya<br><br>
-                <a target="_blank" href='https://github.com/manthan89-py'><img
-                        src="https://image.flaticon.com/icons/png/512/25/25231.png" height="40" width="40"></a> :
-                manthan89-py<br><br>
-                <a target="_blank" href='https://www.linkedin.com/in/manthanbhikadiya'><img
-                        src="https://image.flaticon.com/icons/png/512/174/174857.png" height="40" width="40"></a> :
-                manthanbhikadiya<br>
-            </div>
+    <!-- Title Section -->
+    <div class="row mb-5 text-center" data-aos="fade-down">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4 fw-bold">📞 Contact Us 📞</h1>
+            <p class="lead text-muted">For any queries & suggestions, reach out to us. We are happy to help.</p>
         </div>
     </div>
 
-    <div class="col">
-        <div class=" p-5 bg-white shadow rounded-lg" style="height: 95%;">
-            <center>
-                <h3>Krishna Baldaniya</h3>
-                <p class="lead" style="font-weight: 350;">Hi, I am Krishna Baldaniya. I am an entrepreneur, currently
-                    co-founder at KrsikX India LLP which is an Agri-Tech Startup. Pursuing bachelors in Information
-                    Technology. My main focuses on the technical side are Cloud computing and mobile App development.
+    <!-- Profile Cards Container -->
+    <div class="row justify-content-center g-4">
+        
+        <!-- Profile Card 1 -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-right">
+            <div class="glass-card text-center h-100 d-flex flex-column">
+                <div class="mb-4 mt-3">
+                    <div class="rounded-circle d-inline-flex justify-content-center align-items-center bg-success text-white mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="fw-bold">Navdeep Kaur</h3>
+                </div>
+                
+                <p class="text-muted small mb-4 flex-grow-1 px-3">
+                    Hi, I am Navdeep Kaur. Currently Pursuing Bachelors of Computer Application. My main focus is on Machine Learning, Deep Learning, and Artificial Intelligence. I am also interested in Blockchain and Flutter App Development.
                 </p>
-            </center>
-            <div>
-                <h5>Social Media Handles :</h5><br>
-                <a target="_blank" href='mailto:krishna.baldaniya93@gmail.com'><img
-                        src="https://image.flaticon.com/icons/png/512/281/281769.png" height="40" width="40"></a> :
-                krishna.baldaniya93@gmail.com<br><br>
-                <a target="_blank" href='https://www.instagram.com/krishna.baldaniya/'><img
-                        src="https://image.flaticon.com/icons/png/512/174/174855.png" height="44" width="44"></a> :
-                krishna.baldaniya<br><br>
-                <a target="_blank" href='https://www.linkedin.com/in/krishna-baldaniya-5547381a1/'><img
-                        src="https://image.flaticon.com/icons/png/512/174/174857.png" height="40" width="40"></a> :
-                krishna-baldaniya<br>
+                
+                <div class="text-start bg-light rounded p-3 bg-opacity-50">
+                    <h6 class="fw-bold mb-3 border-bottom pb-2">Social Media Handles:</h6>
+                    
+                    <a target="_blank" href="mailto:navdeepkaur@gmail.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-solid fa-envelope fs-5 text-danger me-3" style="width: 25px;"></i> navdeepkaur@gmail.com
+                    </a>
+                    
+                    <a target="_blank" href="https://navdeepkaur.medium.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-brands fa-medium fs-5 text-dark me-3" style="width: 25px;"></i> navdeepkaur
+                    </a>
+                    
+                    <a target="_blank" href="https://github.com/navdeep89-py" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-brands fa-github fs-5 text-dark me-3" style="width: 25px;"></i> navdeep89-py
+                    </a>
+                    
+                    <a target="_blank" href="https://www.linkedin.com/in/navdeepkaur" class="d-block text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-brands fa-linkedin fs-5 text-primary me-3" style="width: 25px;"></i> navdeepkaur
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
+        <!-- Profile Card 2 -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-left" data-aos-delay="100">
+            <div class="glass-card text-center h-100 d-flex flex-column">
+                <div class="mb-4 mt-3">
+                    <div class="rounded-circle d-inline-flex justify-content-center align-items-center bg-success text-white mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="fw-bold">Khushi Bansal</h3>
+                </div>
+                
+                <p class="text-muted small mb-4 flex-grow-1 px-3">
+                    Hi, I am Khushi Bansal. I am an entrepreneur, currently co-founder at KrsikX India LLP which is an Agri-Tech Startup. Pursuing bachelors in Information Technology. My main focuses on the technical side are Cloud computing and mobile App development.
+                </p>
+                
+                <div class="text-start bg-light rounded p-3 bg-opacity-50">
+                    <h6 class="fw-bold mb-3 border-bottom pb-2">Social Media Handles:</h6>
+                    
+                    <a target="_blank" href="mailto:khushibansal93@gmail.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-solid fa-envelope fs-5 text-danger me-3" style="width: 25px;"></i> khushibansal93@gmail.com
+                    </a>
+                    
+                    <a target="_blank" href="https://www.instagram.com/khushibansal/" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-brands fa-instagram fs-5 text-danger me-3" style="width: 25px;"></i> khushibansal
+                    </a>
+                    
+                    <a target="_blank" href="https://www.linkedin.com/in/khushibansal/" class="d-block text-decoration-none text-dark d-flex align-items-center">
+                        <i class="fa-brands fa-linkedin fs-5 text-primary me-3" style="width: 25px;"></i> khushibansal
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 {% endblock body %}
