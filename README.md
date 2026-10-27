@@ -1,47 +1,137 @@
-# ⭐Plant-Disease-Detection
-* Plant Disease is necessary for every farmer so we are created Plant disease detection using Deep learning. In which we are using convolutional Neural Network for classifying Leaf images into 39 Different Categories. The Convolutional Neural Code build in Pytorch Framework. For Training we are using Plant village dataset. Dataset Link is in My Blog Section.
+# 🌿 Plant Disease Detection & Management System
 
-## ⭐Run Project in your Machine
-* You must have **Python3.8** installed in your machine.
-* Create a Python Virtual Environment & Activate Virtual Environment [Link](https://docs.python.org/3/tutorial/venv.html)
-* Install all the dependencies using below command
-    `pip install -r requirements.txt`
-* Go to the `Flask Deployed App` folder.
-* Download the pre-trained model file `plant_disease_model_1.pt` from [here](https://drive.google.com/drive/folders/1ewJWAiduGuld_9oGSrTuLumg9y62qS6A?usp=share_link)
-* Add the downloaded file in `Flask Deployed App` folder.
-* Run the Flask app using below command `python3 app.py`
-* You can also use downloaded file in `Model` Section and play with it using Jupyter Notebook.
+An AI-powered web application designed to detect plant diseases from leaf images and provide useful information to support plant health management.
 
-## ⭐Contribution ( Open Source )
-* This Project is now open source.
-* All the developers who are intrested they can contribute in this project.
-* Yo can make UI better , make Deep learning model more powerful , add informative markdown file in section...
-* If you will change Deep learning make sure you upload updated markdown file (.md) , .pdf and .ipynb in particular section.
-* Make sure your code is working. It will not have any type or error.
-* You have to fork this project then make a pull request after you testing will successful.
-* How to make pull request : https://opensource.com/article/19/7/create-pull-request-github
+The project combines machine learning with an improved, user-friendly interface to make plant disease detection more accessible.
 
+## 📌 Project Overview
 
-## ⭐Testing Images
+The Plant Disease Detection & Management System helps users identify potential plant diseases by uploading images of plant leaves. The application analyzes the uploaded image using a trained deep learning model and provides a prediction.
 
-* If you do not have leaf images then you can use test images located in test_images folder
-* Each image has its corresponding disease name, so you can verify whether the model is working perfectly or not
+The latest version includes an enhanced graphical interface, improved visual presentation, and a new Supplements page featuring product information with direct hyperlinks to the mentioned products.
 
-## ⭐Blog Link
-<a href="https://medium.com/analytics-vidhya/plant-disease-detection-using-convolutional-neural-networks-and-pytorch-87c00c54c88f" target = "_blank">Plant Disease Detection Using Convolutional Neural Networks with PyTorch</a><br>
+## ✨ Features
 
-## ⭐Deployed App
-<a href="https://plant-disease-detection-ai.herokuapp.com/" target = "_blank">Plant-Disease-Detection-AI</a><br>
+### 🌱 Plant Disease Detection
+- Upload plant leaf images for disease detection.
+- Analyze images using a trained deep learning model.
+- Display predicted disease information.
+- Support plant health awareness and management.
 
+### 🎨 Improved User Interface
+- Enhanced graphics and visual design.
+- Improved page layouts and user experience.
+- More polished and user-friendly interface.
+- Better visual presentation across the application.
 
-## ⭐Snippet of Web App :
-#### Main page
-<img src = "demo_images/1.png" > <br>
-#### AI Engine 
-<img src = "demo_images/2.png"> <br>
-#### Results Page 
-<img src = "demo_images/3.png"> <br>
-#### Supplements/Fertilizer  Store
-<img src = "demo_images/4.JPG"> <br>
-#### Contact Us 
-<img src = "demo_images/5.png"> <br><br>
+### 💊 Supplements Page
+- Dedicated page for plant supplements and related products.
+- Product information presented in an organized format.
+- Direct hyperlinks for every product mentioned on the page.
+- Easy access to external product resources.
+
+### ⚙️ Working Application
+- Functional application workflow.
+- Integration of the disease detection model with the web interface.
+- Improved usability and navigation.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Backend development |
+| Flask | Web application framework |
+| PyTorch | Deep learning model |
+| HTML5 | Web page structure |
+| CSS3 | Styling and improved graphics |
+| JavaScript | Frontend interactivity |
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+- Python 3.9 or a compatible version
+- Git
+- pip
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/abhinawprateek/Disease-management.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Disease-management
+```
+
+### 3. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate the virtual environment
+
+For Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Run the application
+
+```bash
+python app.py
+```
+
+Open the local URL displayed in the terminal to access the application.
+
+> Note: Make sure the trained model file is present in the location expected by the application.
+
+## 📖 How to Use
+
+1. Launch the application.
+2. Navigate to the Plant Disease Detection section.
+3. Upload an image of a plant leaf.
+4. Run the disease detection process.
+5. View the predicted disease information.
+6. Explore the Supplements page for relevant products.
+7. Click the product hyperlinks to access the corresponding external resources.
+
+## 💊 Supplements & Product Resources
+
+The Supplements page provides information about plant-related supplements and products.
+
+Each product mentioned on the page includes a direct hyperlink, allowing users to access the corresponding product resource.
+
+## 🔮 Future Enhancements
+
+- Expand the dataset to support more plant species and diseases.
+- Improve model accuracy through additional training.
+- Add more plant care and disease management resources.
+- Enhance the user interface and accessibility.
+- Introduce additional plant health management features.
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and informational purposes. Disease predictions are based on the trained machine learning model and should not be considered a substitute for professional agricultural advice.
+
+## 👨‍💻 Author
+
+**Abhinaw Singh**
+
+B.Tech Computer Science & Engineering
+
+Lovely Professional University
+
+## 🔗 Repository
+
+[GitHub – Disease-management](https://github.com/abhinawprateek/Disease-management)
