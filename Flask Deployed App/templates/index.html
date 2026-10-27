@@ -11,80 +11,100 @@
     <p>Our AI is analyzing the leaf. Please wait.</p>
 </div>
 
-<div class="container my-5">
-    <!-- Header -->
-    <div class="row mb-5 text-center" data-aos="fade-down">
-        <div class="col-lg-10 mx-auto">
-            <h1 class="display-4 fw-bold">🍀 AI Engine 🍀</h1>
-            <p class="lead text-muted">Upload an image of your plant's leaf and let the AI detect any diseases.</p>
-        </div>
-    </div>
+<!-- AI ENGINE PAGE WITH VIDEO BACKGROUND -->
+<section class="ai-engine-page">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="ai-engine-bg-video">
+        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260331_074327_a4d6275d-82d9-4c83-bfbe-f1fb2213c17c.mp4" type="video/mp4">
+    </video>
 
-    <!-- Main Content -->
-    <div class="row g-4 align-items-stretch">
-        
-        <!-- Why Detect Disease -->
-        <div class="col-md-4" data-aos="fade-right">
-            <div class="glass-card h-100">
-                <h5 class="fw-bold mb-3"><i class="fa-solid fa-circle-question me-2 text-success"></i>Why is it necessary?</h5>
-                <p class="small text-muted">
-                    Plant diseases affect the growth of their respective species. Early diagnosis is one of the most important aspects of plant care. Without proper identification of the disease and the disease-causing agent, disease control measures can be a waste of time and money, leading to further plant losses. Proper disease diagnosis is critical for a healthy harvest.
-                </p>
+    <!-- Overlay -->
+    <div class="ai-engine-overlay"></div>
+
+    <!-- Page Content -->
+    <div class="ai-engine-content">
+        <div class="container py-4">
+            <!-- Header -->
+            <div class="row mb-5 text-center" data-aos="fade-down">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-4 fw-bold">AI Engine</h1>
+                    <p class="lead page-subtitle">Upload an image of your plant's leaf and let the AI detect any diseases.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Upload Section -->
-        <div class="col-md-4" data-aos="zoom-in">
-            <div class="glass-card h-100 d-flex flex-column justify-content-center align-items-center">
-                
-                <form id="uploadForm" action="/submit" method="POST" enctype="multipart/form-data" class="w-100 text-center">
-                    
-                    <!-- Drag and Drop Zone -->
-                    <div id="uploadZone" class="upload-zone mb-3">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <h5 class="fw-bold">Drag & Drop</h5>
-                        <p class="text-muted small mb-0">or click to browse</p>
-                        <input type="file" id="actual-btn" name="file" accept="image/*" capture="environment" style="display: none;" required />
+            <!-- Main Content -->
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Why Detect Disease -->
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="glass-card h-100">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fa-solid fa-circle-question me-2 text-success"></i>
+                            Why is it necessary?
+                        </h5>
+                        <p class="small text-muted">
+                            Plant diseases affect the growth of their respective species. Early diagnosis is one of the most important aspects of plant care. Without proper identification of the disease and the disease-causing agent, disease control measures can be a waste of time and money, leading to further plant losses. Proper disease diagnosis is critical for a healthy harvest.
+                        </p>
                     </div>
-                    
-                    <span id="file-chosen" class="d-block mb-3 text-muted small fw-bold">No file chosen</span>
+                </div>
 
-                    <!-- Image Preview -->
-                    <img id="imagePreview" src="#" alt="Preview" class="img-fluid rounded mb-4 shadow-sm" style="display: none; max-height: 200px; object-fit: cover; margin: 0 auto;">
-                    
-                    <p class="text-muted small mb-4">
-                        Simply upload your plant's leaf image and see the magic of AI.
-                    </p>
+                <!-- Upload Section -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="glass-card h-100 d-flex flex-column justify-content-center align-items-center">
 
-                    <button type="submit" id="submitBtn" class="btn btn-custom w-100">
-                        <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Detect Disease
-                    </button>
-                </form>
+                        <form id="uploadForm" action="/submit" method="POST" enctype="multipart/form-data" class="w-100 text-center">
+
+                            <!-- Drag and Drop Zone -->
+                            <div id="uploadZone" class="upload-zone mb-3">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <h5 class="fw-bold">Drag & Drop</h5>
+                                <p class="text-muted small mb-0">or click to browse</p>
+                                <input type="file" id="actual-btn" name="file" accept="image/*" capture="environment" style="display: none;" required />
+                            </div>
+
+                            <span id="file-chosen" class="d-block mb-3 text-muted small fw-bold">No file chosen</span>
+
+                            <!-- Image Preview -->
+                            <img id="imagePreview" src="#" alt="Preview" class="img-fluid rounded mb-4 shadow-sm" style="display: none; max-height: 200px; object-fit: cover; margin: 0 auto;">
+
+                            <p class="text-muted small mb-4">
+                                Simply upload your plant's leaf image and see the magic of AI.
+                            </p>
+
+                            <button type="submit" id="submitBtn" class="btn btn-custom w-100">
+                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Detect Disease
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Prevention Steps -->
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="glass-card h-100">
+                        <h5 class="fw-bold mb-3">
+                            <i class="fa-solid fa-shield-halved me-2 text-success"></i>
+                            Prevention Steps
+                        </h5>
+                        <ol class="small text-muted ps-3 mb-4">
+                            <li class="mb-2">Follow Good Sanitation Practices.</li>
+                            <li class="mb-2">Fertilize to Keep Your Plants Healthy.</li>
+                            <li class="mb-2">Inspect Plants for Diseases Before You Bring Them Home.</li>
+                            <li class="mb-2">Allow the Soil to Warm Before Planting.</li>
+                            <li class="mb-2">Ensure a Healthy Vegetable Garden By Rotating Crops.</li>
+                            <li class="mb-2">Provide Good Air Circulation.</li>
+                            <li class="mb-2">Remove Diseased Stems and Foliage.</li>
+                        </ol>
+                        <a target="_blank" href="https://www.thespruce.com/prevent-plant-diseases-in-your-garden-2539511" class="btn btn-outline-success btn-sm w-100 rounded-pill">
+                            More Info <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
-
-        <!-- Prevention Steps -->
-        <div class="col-md-4" data-aos="fade-left">
-            <div class="glass-card h-100">
-                <h5 class="fw-bold mb-3"><i class="fa-solid fa-shield-halved me-2 text-success"></i>Prevention Steps</h5>
-                <ol class="small text-muted ps-3 mb-4">
-                    <li class="mb-2">Follow Good Sanitation Practices.</li>
-                    <li class="mb-2">Fertilize to Keep Your Plants Healthy.</li>
-                    <li class="mb-2">Inspect Plants for Diseases Before You Bring Them Home.</li>
-                    <li class="mb-2">Allow the Soil to Warm Before Planting.</li>
-                    <li class="mb-2">Ensure a Healthy Vegetable Garden By Rotating Crops.</li>
-                    <li class="mb-2">Provide Good Air Circulation.</li>
-                    <li class="mb-2">Remove Diseased Stems and Foliage.</li>
-                </ol>
-                <a target="_blank" href="https://www.thespruce.com/prevent-plant-diseases-in-your-garden-2539511" class="btn btn-outline-success btn-sm w-100 rounded-pill">
-                    More Info <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
-                </a>
-            </div>
-        </div>
-
     </div>
-</div>
+</section>
 
 <script>
     // Disable button on submit to prevent multiple clicks

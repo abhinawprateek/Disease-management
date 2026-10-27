@@ -2,88 +2,114 @@
 {% block pagetitle %}Contact Us{% endblock pagetitle %}
 
 {% block body %}
-<div class="container my-5">
+<section class="contact-page">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="contact-bg-video">
+        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260503_101827_abebfeec-f243-466b-b494-7f6814c0fbbf.mp4" type="video/mp4">
+    </video>
 
-    <!-- Title Section -->
-    <div class="row mb-5 text-center" data-aos="fade-down">
-        <div class="col-lg-8 mx-auto">
-            <h1 class="display-4 fw-bold">📞 Contact Us 📞</h1>
-            <p class="lead text-muted">For any queries & suggestions, reach out to us. We are happy to help.</p>
-        </div>
-    </div>
+    <!-- Overlay -->
+    <div class="contact-overlay"></div>
 
-    <!-- Profile Cards Container -->
-    <div class="row justify-content-center g-4">
-        
-        <!-- Profile Card 1 -->
-        <div class="col-md-6 col-lg-5" data-aos="fade-right">
-            <div class="glass-card text-center h-100 d-flex flex-column">
-                <div class="mb-4 mt-3">
-                    <div class="rounded-circle d-inline-flex justify-content-center align-items-center bg-success text-white mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <h3 class="fw-bold">Navdeep Kaur</h3>
-                </div>
-                
-                <p class="text-muted small mb-4 flex-grow-1 px-3">
-                    Hi, I am Navdeep Kaur. Currently Pursuing Bachelors of Computer Application. My main focus is on Machine Learning, Deep Learning, and Artificial Intelligence. I am also interested in Blockchain and Flutter App Development.
-                </p>
-                
-                <div class="text-start bg-light rounded p-3 bg-opacity-50">
-                    <h6 class="fw-bold mb-3 border-bottom pb-2">Social Media Handles:</h6>
-                    
-                    <a target="_blank" href="mailto:navdeepkaur@gmail.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-solid fa-envelope fs-5 text-danger me-3" style="width: 25px;"></i> navdeepkaur@gmail.com
-                    </a>
-                    
-                    <a target="_blank" href="https://navdeepkaur.medium.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-brands fa-medium fs-5 text-dark me-3" style="width: 25px;"></i> navdeepkaur
-                    </a>
-                    
-                    <a target="_blank" href="https://github.com/navdeep89-py" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-brands fa-github fs-5 text-dark me-3" style="width: 25px;"></i> navdeep89-py
-                    </a>
-                    
-                    <a target="_blank" href="https://www.linkedin.com/in/navdeepkaur" class="d-block text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-brands fa-linkedin fs-5 text-primary me-3" style="width: 25px;"></i> navdeepkaur
-                    </a>
+    <!-- Content -->
+    <div class="contact-page-content">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="row justify-content-center text-center mb-5" data-aos="fade-down">
+                <div class="col-lg-9">
+                    <h1 class="display-3 fw-bold contact-title">
+                        <span class="contact-leaf">🍃</span>
+                        Contact Us
+                        <span class="contact-leaf">🍃</span>
+                    </h1>
+                    <p class="contact-subtitle">
+                        For collaborations, projects, or opportunities, feel free to reach out.
+                        I’ll get back to you as soon as possible.
+                    </p>
                 </div>
             </div>
-        </div>
 
-        <!-- Profile Card 2 -->
-        <div class="col-md-6 col-lg-5" data-aos="fade-left" data-aos-delay="100">
-            <div class="glass-card text-center h-100 d-flex flex-column">
-                <div class="mb-4 mt-3">
-                    <div class="rounded-circle d-inline-flex justify-content-center align-items-center bg-success text-white mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="fa-solid fa-user"></i>
+            <!-- Main Contact Card -->
+            <div class="row justify-content-center" data-aos="zoom-in">
+                <div class="col-12 col-xl-10">
+                    <div class="contact-main-card">
+
+                        <!-- Left Profile Section -->
+                        <div class="contact-left">
+                            <div class="contact-avatar-wrap">
+                                <div class="contact-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div class="contact-profile-content">
+                                <h2 class="contact-name">Abhinaw Singh</h2>
+                                <p class="contact-role">Software Engineer</p>
+
+                                <p class="contact-bio">
+                                    Hi, I’m Abhinaw Singh. I build intelligent solutions using machine learning
+                                    and web technologies. I created this application to support plant health
+                                    monitoring and disease detection.
+                                </p>
+
+                                <div class="contact-status-pill">
+                                    <span class="status-dot"></span>
+                                    Open to Work
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="contact-divider"></div>
+
+                        <!-- Right Contact Links -->
+                        <div class="contact-right">
+                            <a href="mailto:abhinavsingh78841@gmail.com" class="contact-link-card" target="_blank">
+                                <div class="contact-link-icon email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <h5>Email</h5>
+                                    <p>abhinavsingh78841@gmail.com</p>
+                                </div>
+                                <div class="contact-link-arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/abhinawprateek" class="contact-link-card" target="_blank">
+                                <div class="contact-link-icon github">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <h5>GitHub</h5>
+                                    <p>abhinawprateek</p>
+                                </div>
+                                <div class="contact-link-arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/abhinaw-singh/" class="contact-link-card" target="_blank">
+                                <div class="contact-link-icon linkedin">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <h5>LinkedIn</h5>
+                                    <p>abhinaw-singh</p>
+                                </div>
+                                <div class="contact-link-arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    <h3 class="fw-bold">Khushi Bansal</h3>
-                </div>
-                
-                <p class="text-muted small mb-4 flex-grow-1 px-3">
-                    Hi, I am Khushi Bansal. I am an entrepreneur, currently co-founder at KrsikX India LLP which is an Agri-Tech Startup. Pursuing bachelors in Information Technology. My main focuses on the technical side are Cloud computing and mobile App development.
-                </p>
-                
-                <div class="text-start bg-light rounded p-3 bg-opacity-50">
-                    <h6 class="fw-bold mb-3 border-bottom pb-2">Social Media Handles:</h6>
-                    
-                    <a target="_blank" href="mailto:khushibansal93@gmail.com" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-solid fa-envelope fs-5 text-danger me-3" style="width: 25px;"></i> khushibansal93@gmail.com
-                    </a>
-                    
-                    <a target="_blank" href="https://www.instagram.com/khushibansal/" class="d-block mb-2 text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-brands fa-instagram fs-5 text-danger me-3" style="width: 25px;"></i> khushibansal
-                    </a>
-                    
-                    <a target="_blank" href="https://www.linkedin.com/in/khushibansal/" class="d-block text-decoration-none text-dark d-flex align-items-center">
-                        <i class="fa-brands fa-linkedin fs-5 text-primary me-3" style="width: 25px;"></i> khushibansal
-                    </a>
                 </div>
             </div>
+
         </div>
-
     </div>
-
-</div>
+</section>
 {% endblock body %}
